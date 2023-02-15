@@ -47,17 +47,18 @@ declare(strict_types=1);
 
                 <h1 class="boss__title">Home page</h1>
                 
+
                 <?php include_once __DIR__ .'/layout/nav_boss.php'; ?>
 
                 
                 <div class="boss__container">
                     
                     <a href="boss.users.php" class="boss__card">
-                        <p class="text-lg text-center font-semibold">Users : </p>
+                        <p class="boss__card_title">Users : </p>
                         <p class="text-center"><?php echo htmlspecialchars($num_of_users); ?></p>
                     </a>
                     <a href="boss.messages.php" class="boss__card">
-                        <p class="text-lg font-semibold text-center">Messages : </p>
+                        <p class="boss__card_title">Messages : </p>
                         <p class="text-center"><?php echo htmlspecialchars($num_of_unread_msg); ?></p>
                     </a>
 

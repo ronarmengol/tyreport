@@ -22,4 +22,4 @@
 
     <title><?php echo htmlspecialchars($title); ?></title>
 </head>
-<body class="font-montserrat">
+<body>
