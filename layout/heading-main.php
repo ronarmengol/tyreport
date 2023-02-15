@@ -1,0 +1,1 @@
+<h1 class="heading-main"><?php echo htmlspecialchars($heading); ?></h1>
