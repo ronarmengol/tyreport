@@ -102,7 +102,7 @@ body {
 
 
 .bossusers {
-  display: block;
+  display: flex;
 }
 
 .bossusers__sidebar{
@@ -124,12 +124,6 @@ body {
   color: var(--primary);
 }
 
-/* .bossusers__container {
-  display: block;
-  max-width: 900px;
-  overflow-x: auto;
-  
-} */
 
 .bossusers__table_wrapper {
   overflow-x: auto;
@@ -227,24 +221,20 @@ body {
   .boss__sidebar {
     display: block;
   }
-  .bossusers__sidebar {
-    display: block;
-  }
   .boss__mainbar_content {
     display: none;
   }
+  
   .bossusers {
     display: flex;
   }
-  .bossusers__content {
-    flex-grow: 0;
-  }
-  .bossusers__table_wrapper {
-    min-width: 0;
-  }
+  
 
   .bossusers__main_nav {
     display: none;
+  }
+  .bossusers__sidebar {
+    display: block;
   }
 
 }

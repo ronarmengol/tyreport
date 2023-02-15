@@ -41,35 +41,33 @@ declare(strict_types=1);
 
                 <h1 class="bossusers__title ">Users</h1>
                 
-                <div class="bossusers__container">
-                    <div class="bossusers__table_wrapper">
+                <div class="bossusers__table_wrapper">
 
-                        <table class="bossusers__table">
-                            <thead class="bg-indigo-100">
+                    <table class="bossusers__table">
+                        <thead>
+                            <tr>
+                                <th>firstname</th>
+                                <th>lastname</th>
+                                <th>username</th>
+                                <th>password</th>
+                                <th>level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach($users as $user): ?>
                                 <tr>
-                                    <th class="border border-indigo-600 px-5 py-2">firstname</th>
-                                    <th class="border border-indigo-600 px-5 py-2">lastname</th>
-                                    <th class="border border-indigo-600 px-5 py-2">username</th>
-                                    <th class="border border-indigo-600 px-5 py-2">password</th>
-                                    <th class="border border-indigo-600 px-5 py-2">level</th>
+                                    <td><?php echo htmlspecialchars($user['firstname']); ?></td>
+                                    <td><?php echo htmlspecialchars($user['lastname']); ?></td>
+                                    <td><?php echo htmlspecialchars($user['username']); ?></td>
+                                    <td><?php echo htmlspecialchars($user['password']); ?></td>
+                                    <td><?php echo htmlspecialchars($user['level']); ?></td>
+                                    
                                 </tr>
-                            </thead>
-                            <tbody>
-                                <?php foreach($users as $user): ?>
-                                    <tr>
-                                        <td class="py-2 border border-indigo-600 px-2"><?php echo htmlspecialchars($user['firstname']); ?></td>
-                                        <td class="py-2 border border-indigo-600 px-2"><?php echo htmlspecialchars($user['lastname']); ?></td>
-                                        <td class="py-2 border border-indigo-600 px-2"><?php echo htmlspecialchars($user['username']); ?></td>
-                                        <td class="py-2 border border-indigo-600 px-2"><?php echo htmlspecialchars($user['password']); ?></td>
-                                        <td class="py-2 border border-indigo-600 text-center"><?php echo htmlspecialchars($user['level']); ?></td>
-                                        
-                                    </tr>
-                            </tbody>
-                                
-                                <?php endforeach; ?>
-                        </table>
+                            <?php endforeach; ?>
+                        </tbody>
                             
-                    </div>
+                    </table>
+                        
                 </div>
 
                 
