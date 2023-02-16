@@ -49,7 +49,6 @@ select * FROM contact_msg;
 
 select IF(LENGTH(message) > 10, CONCAT(SUBSTRING(message, 1, 10), '...'), message) as message from contact_msg order by created_at desc;
 
-DELETE from contact_msg where id >27;
 
 
 select * from contact_msg;
