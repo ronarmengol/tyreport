@@ -43,12 +43,14 @@ declare(strict_types=1);
                 <?php require_once __DIR__ .'/layout/navbar.php'; ?>
             </div>
             
-            <div class="">
+            <div>
 
                 <h1 class="boss__title">Home page</h1>
                 
-
-                <?php include_once __DIR__ .'/layout/nav_boss.php'; ?>
+                <div class="boss__mainbar_content">
+                    <?php include_once __DIR__ .'/layout/nav_boss.php'; ?>
+                </div>
+                
 
                 
                 <div class="boss__container">

@@ -47,8 +47,10 @@ select * from users_rn;
 
 select * FROM contact_msg;
 
-select IF(LENGTH(message) > 10, CONCAT(SUBSTRING(message, 1, 10), '...'), message) as message from contact_msg order by created_at desc;
+select IF(LENGTH(message) > 10, CONCAT(SUBSTRING(message, 1, 10), '...'), message) as message, id from contact_msg order by created_at desc;
 
+update contact_msg set is_read=0;
 
+update contact_msg set is_read=1 where id=1;
 
 select * from contact_msg;

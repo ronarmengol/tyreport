@@ -40,6 +40,10 @@ declare(strict_types=1);
             <div class="">
 
                 <h1 class="bossusers__title ">Users</h1>
+
+                <div class="boss__mainbar_content">
+                    <?php include_once __DIR__ .'/layout/nav_boss.php'; ?>
+                </div>
                 
                 <div class="bossusers__table_wrapper">
 

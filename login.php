@@ -80,29 +80,33 @@ if (isset($_POST['submit'])) {
 <?php $title = "Tyreport : login page"; ?>
 <?php $heading = "login page"; ?>
 <?php require_once __DIR__ . '/layout/header.php'; ?>
-<?php require_once __DIR__ . '/layout/navbar.php'; ?>
-<?php require_once __DIR__ . '/layout/heading-main.php'; ?>
+<div class="login__main">
 
-<div class="container">
-
-    <form class="mt20" action="login.php" method="post">
-        <fieldset class="fieldset">
-            <legend class="legend">login</legend>
+    <?php require_once __DIR__ . '/layout/navbar.php'; ?>
+    <?php require_once __DIR__ . '/layout/heading-main.php'; ?>
+    
+    <div class="container">
+        
+        <form class="mt20" action="login.php" method="post">
+            <fieldset class="fieldset">
+                <legend class="legend">login</legend>
                 <div class="form-div">
                     <input class="input-text" type="text" placeholder="username" name="username" value="<?php echo htmlspecialchars($username); ?>">
                     <p class="error-message"><?php echo htmlspecialchars($errors['username']); ?></p>
                 </div>
-
+                
                 <div class="mb-3">
                     <input class="input-text" type="text" placeholder="password" name="password">
                     <p class="error-message"><?php echo htmlspecialchars($errors['password']); ?></p>
                 </div>
                 
-
+                
                 <div class="mt20">
                     <button class="btn1 block mxauto" type="submit" name="submit">submit</button>
                 </div>
-        </fieldset>
-    </form>
+            </fieldset>
+        </form>
+    </div>
+    
+    
 </div>
-

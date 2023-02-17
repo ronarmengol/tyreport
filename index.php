@@ -7,10 +7,14 @@ session_start();
 
 
 <?php require_once __DIR__ . '/layout/header.php'; ?>
-<?php require_once __DIR__ . '/layout/navbar.php'; ?>
-<?php require_once __DIR__ . '/layout/heading-main.php'; ?>
+<div class="index__main">
+    <?php require_once __DIR__ . '/layout/navbar.php'; ?>
 
 
+    <?php require_once __DIR__ . '/layout/heading-main.php'; ?>
+    
+    
+</div>
 
 
 

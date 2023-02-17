@@ -29,7 +29,7 @@ box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   /* overflow-x: hidden; */
 }
 
@@ -49,6 +49,12 @@ body {
 .boss__mainbar {
   /* flex-grow: 1; */
   width: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url(images/tire.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  min-height: 100vh;
 }
 
 .boss__title {
@@ -57,6 +63,10 @@ body {
   font-weight: 400;
   color: var(--primary);
   margin-top: 20px;
+}
+
+.boss__mainbar_content {
+  margin-bottom: 20px;
 }
 
 .boss__container {
@@ -101,45 +111,141 @@ body {
 }
 
 
+.bossmessages {
+  display: flex;
+}
+
+.bossmessages__sidebar{
+  display: none;
+  width: 250px;
+  /* background-attachment: fixed; */
+  position: fixed;
+}
+
+.bossmessages td {
+  white-space: nowrap;
+  
+}
+
+.bossmessages__table_action {
+  display: flex;
+  column-gap: 10px;
+}
+
 .bossusers {
   display: flex;
 }
 
+
 .bossusers__sidebar{
   display: none;
   width: 250px;
+  /* position: fixed; */
 }
 
 .bossusers__content {
   min-width: 0; 
   /* flex: 1; */
   width: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(images/tire.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
+
 
 .bossusers__title {
   text-align: center;
   margin-top: 20px;
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   font-weight: 400;
   color: var(--primary);
+  /* margin-bottom: 20px; */
 }
 
 
 .bossusers__table_wrapper {
   overflow-x: auto;
-  /* padding: 0 20px 0 20px; */
   margin: auto;
-  /* max-width: 90%; */
   width: 90%;
-  /* background-color: #e11d4740; */
+  padding: 0 20px 0 20px;
 }
 
 .bossusers__table {
-  /* padding: 0 20px 0 20px; */
-  /* width: 100%; */
   margin: 0 auto;
 }
 
+
+.bossview__card {
+  border: 1px solid var(--primary);
+  max-width: 600px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.bossview__card p:nth-child(1) {
+  background-color: var(--primary-light);
+  padding: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bossview__card p:nth-child(2) {
+  text-align: center;
+}
+
+.bossview__card p:nth-child(4) {
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.bossview__card p:nth-child(6) {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+.bossview__card p:nth-child(7) {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+
+.bossview__card_time {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact__main {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(images/tyres2.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+
+.index__main {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(images/tyres2.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.login__main {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(images/tyres2.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
 
 
 .sidebar__main {
@@ -147,7 +253,12 @@ body {
   min-height: 100vh;
   height: 100%;
 
-  background:radial-gradient(circle at 19% 26%, rgba(79, 70, 229, 1) 0%, rgba(55, 48, 163, 1) 50%);
+  /* background:radial-gradient(circle at 19% 26%, rgba(79, 70, 229, 1) 0%, rgba(55, 48, 163, 1) 50%); */
+  /* background-attachment: fixed; */
+  position: fixed;
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='250' height='800' preserveAspectRatio='none' viewBox='0 0 250 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1130%26quot%3b)' fill='none'%3e%3crect width='250' height='800' x='0' y='0' fill='rgba(17%2c 17%2c 85%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c271.337C61.699%2c284.788%2c127.36%2c313.732%2c184.887%2c287.689C243.539%2c261.137%2c267.98%2c193.019%2c298.37%2c136.261C330.68%2c75.917%2c373.107%2c15.4%2c367.191%2c-52.794C361.174%2c-122.15%2c311.23%2c-177.578%2c266.514%2c-230.936C221.139%2c-285.081%2c177.277%2c-359.454%2c106.753%2c-363.567C34.494%2c-367.781%2c-6.404%2c-277.593%2c-73.634%2c-250.775C-131.36%2c-227.748%2c-212.458%2c-266.326%2c-253.66%2c-219.797C-294.775%2c-173.366%2c-263.421%2c-99.722%2c-262.301%2c-37.713C-261.37%2c13.83%2c-270.042%2c66.665%2c-247.645%2c113.096C-225.473%2c159.061%2c-182.448%2c189.502%2c-139.445%2c216.981C-96.537%2c244.399%2c-49.751%2c260.491%2c0%2c271.337' fill='%230b0b37'%3e%3c/path%3e%3cpath d='M250 1097.526C314.622 1104.0059999999999 383.807 1128.0059999999999 440.89099999999996 1097.032 498.68899999999996 1065.671 520.1030000000001 995.641 547.74 935.973 575.519 875.998 609.6279999999999 815.047 601.905 749.404 594.106 683.119 553.3969999999999 625.115 505.676 578.455 460.376 534.162 400.929 510.859 340.038 493.358 279.445 475.943 212.702 451.512 155.387 477.777 98.97200000000001 503.629 91.887 580.9300000000001 49.67599999999999 626.418 5.229000000000013 674.316-77.31700000000001 687.85-97.28300000000002 750.068-117.32799999999997 812.534-82.78300000000002 880.183-49.988999999999976 937.001-19.15300000000002 990.4259999999999 27.833 1031.966 82.221 1061.069 133.725 1088.629 191.877 1091.6979999999999 250 1097.526' fill='%23171773'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1130'%3e%3crect width='250' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+
 
 }
 
@@ -197,13 +308,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
 .heading-main {
   font-weight: 500;
   color: var(--primary);
@@ -228,7 +332,14 @@ body {
   .bossusers {
     display: flex;
   }
+
+  .bossusers__table_wrapper {
+    padding: 0 20px 0 50px;
+  }
   
+  .bossmessages__sidebar {
+    display: block;
+  }
 
   .bossusers__main_nav {
     display: none;
@@ -315,6 +426,7 @@ body {
 
 table {
   border-collapse: collapse;
+  background-color: var(--nav-text-light);
 }
 
 table, th, td {
@@ -328,9 +440,46 @@ th {
 }
 
 td {
-  padding: 2px 10px;
+  padding: 5px 10px;
 
 }
+
+.table-delete-btn {
+  background: var(--secondary);
+  color: var(--nav-text);
+  padding: 2px 20px;
+  margin: auto;
+  display: block;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.table-delete-btn:hover {
+  background-color: var(--secondary-dark);
+  color: var(--nav-text-light);
+}
+
+.table-view-btn {
+  background: var(--primary);
+  color: var(--nav-text);
+  padding: 2px 20px;
+  margin: auto;
+  display: block;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.table-view-btn:hover {
+  background-color: var(--nav-active);
+  color: var(--nav-text-light);
+}
+
 
 
 
@@ -372,6 +521,7 @@ td {
   background-color: var(--primary);
   padding: 10px 20px;
   justify-content: space-between;
+  position: sticky;
 
   
 }
